@@ -26,6 +26,6 @@ public class Ask implements Offer {
 
 	@Override
 	public String toString() {
-		return String.format("\t\t%s %d\n", this.size, this.ask);
+		return String.format("\t\t%s\t%d\n", this.size, this.ask);
 	}
 }
