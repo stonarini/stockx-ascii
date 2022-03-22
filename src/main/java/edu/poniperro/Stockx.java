@@ -1,5 +1,6 @@
 package edu.poniperro;
 
+import edu.poniperro.criteria.Asks;
 import edu.poniperro.criteria.Bids;
 import edu.poniperro.criteria.Criteria;
 import edu.poniperro.item.Item;
@@ -82,9 +83,9 @@ public class Stockx {
          * offers de la zapatilla.
          */
 
-        // Criteria asks = new Asks();
-        // System.out.println("\n\t\t All ASKS");
-        // asks.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria asks = new Asks();
+        System.out.println("\n\t\t All ASKS");
+        asks.checkCriteria(sneaker).forEach(System.out::print);
 
         /**
          * Muestra la bid maxima
