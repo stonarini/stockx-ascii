@@ -12,7 +12,6 @@
     <url>https://www.github.com/stonarini/stockx-ascii</url>
 
     <properties>
-        <!-- FIXME change it to the project's main class -->
         <main.class>Stockx</main.class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
