@@ -1,0 +1,22 @@
+package edu.poniperro.criteria;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import edu.poniperro.item.Item;
+import edu.poniperro.offer.Ask;
+import edu.poniperro.offer.Offer;
+
+public class Asks implements Criteria {
+	public Asks() {
+
+	}
+
+	@Override
+	public List<Offer> checkCriteria(Item item) {
+		return item.offers().stream()
+				.filter(o -> o instanceof Ask)
+				.sorted((o1, o2) -> o2.compareTo(o1))
+				.collect(Collectors.toList());
+	}
+}
